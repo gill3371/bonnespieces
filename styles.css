@@ -41,15 +41,31 @@ main {
 .filtres h3 {
 	text-align: center;
 }
-
 .fiches {
 	flex: 1;
 	margin: 8px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 4px;
+}
+.fiches div {
+	border: 2px solid black;
+	padding: 8px;
+	margin: 8px;
+}
+.fiches div:hover {
+	background-color: lightgray;
+}
+.fiches h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
 }
 .fiches img {
 	max-width: 200px;
 }
 .fiches p {
+	color: blue;
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
